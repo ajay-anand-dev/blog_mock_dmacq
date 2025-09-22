@@ -1,0 +1,75 @@
+// import { readPosts } from "./postStorage";
+
+// lib/mockDB.ts
+export type User = { email: string; password: string };
+
+export type Post = { id: number; title: string; content: string; likes: number; };
+// const globalForPosts = global as unknown as { posts: Post[] }
+
+// export const posts = globalForPosts.posts || (globalForPosts.posts = readPosts())
+
+// const globalForUsers = global as unknown as { users: User[] };
+
+// export const users = globalForUsers.users || (globalForUsers.users = []);
+
+export const posts: Post[] = [
+    { id: 1, title: "Blog Post 1", content: "Exploring the latest trends in web development and modern frameworks.", likes: 5 },
+    { id: 2, title: "Blog Post 2", content: "A guide to building scalable applications with clean architecture.", likes: 7 },
+    { id: 3, title: "Blog Post 3", content: "Tips for improving your productivity as a software developer.", likes: 3 },
+    { id: 4, title: "Blog Post 4", content: "Understanding React hooks and how they simplify state management.", likes: 9 },
+    { id: 5, title: "Blog Post 5", content: "Why TypeScript is becoming essential for modern JavaScript projects.", likes: 4 },
+    { id: 6, title: "Blog Post 6", content: "How to optimize your website for performance and SEO.", likes: 6 },
+    { id: 7, title: "Blog Post 7", content: "Best practices for writing maintainable and reusable code.", likes: 2 },
+    { id: 8, title: "Blog Post 8", content: "An introduction to cloud deployments with AWS and Azure.", likes: 8 },
+    { id: 9, title: "Blog Post 9", content: "Creating engaging UI with Tailwind CSS and component libraries.", likes: 3 },
+    { id: 10, title: "Blog Post 10", content: "Managing application state efficiently with React Query or Zustand.", likes: 5 },
+    { id: 11, title: "Blog Post 11", content: "A deep dive into REST APIs and handling asynchronous requests.", likes: 7 },
+    { id: 12, title: "Blog Post 12", content: "How to handle authentication securely in modern web apps.", likes: 4 },
+    { id: 13, title: "Blog Post 13", content: "Improving user experience with lazy loading and infinite scroll.", likes: 6 },
+    { id: 14, title: "Blog Post 14", content: "A beginner’s guide to Node.js backend development.", likes: 2 },
+    { id: 15, title: "Blog Post 15", content: "Understanding the importance of testing and test-driven development.", likes: 8 },
+    { id: 16, title: "Blog Post 16", content: "Exploring DevOps practices and CI/CD pipelines for faster releases.", likes: 5 },
+    { id: 17, title: "Blog Post 17", content: "Tips for debugging and error handling in JavaScript and TypeScript.", likes: 3 },
+    { id: 18, title: "Blog Post 18", content: "Building interactive dashboards with charts and data visualization.", likes: 9 },
+    { id: 19, title: "Blog Post 19", content: "How to structure a project folder for scalability and maintainability.", likes: 1 },
+    { id: 20, title: "Blog Post 20", content: "Optimizing database queries and understanding indexing.", likes: 6 },
+    { id: 21, title: "Blog Post 21", content: "Creating reusable React components with proper prop types.", likes: 4 },
+    { id: 22, title: "Blog Post 22", content: "An overview of modern frontend frameworks like Next.js and Remix.", likes: 7 },
+    { id: 23, title: "Blog Post 23", content: "Understanding asynchronous JavaScript and Promises.", likes: 3 },
+    { id: 24, title: "Blog Post 24", content: "Handling forms efficiently with React Hook Form.", likes: 5 },
+    { id: 25, title: "Blog Post 25", content: "Exploring server-side rendering vs static generation in Next.js.", likes: 2 },
+    { id: 26, title: "Blog Post 26", content: "How to deploy applications on Vercel and Netlify.", likes: 6 },
+    { id: 27, title: "Blog Post 27", content: "Tips for writing clean and readable CSS with utility-first frameworks.", likes: 8 },
+    { id: 28, title: "Blog Post 28", content: "Implementing infinite scroll with React Query and IntersectionObserver.", likes: 4 },
+    { id: 29, title: "Blog Post 29", content: "Optimizing images and assets for faster load times.", likes: 7 },
+    { id: 30, title: "Blog Post 30", content: "Using cookies and local storage for user session management.", likes: 5 },
+    { id: 31, title: "Blog Post 31", content: "Creating modals, toasts, and alerts with React components.", likes: 2 },
+    { id: 32, title: "Blog Post 32", content: "How to integrate third-party APIs and handle responses.", likes: 6 },
+    { id: 33, title: "Blog Post 33", content: "Understanding GraphQL and its benefits over REST.", likes: 3 },
+    { id: 34, title: "Blog Post 34", content: "Best practices for version control with Git and GitHub.", likes: 8 },
+    { id: 35, title: "Blog Post 35", content: "Exploring testing libraries like Jest and React Testing Library.", likes: 4 },
+    { id: 36, title: "Blog Post 36", content: "How to create dynamic routes in Next.js applications.", likes: 7 },
+    { id: 37, title: "Blog Post 37", content: "Using environment variables securely in frontend and backend.", likes: 5 },
+    { id: 38, title: "Blog Post 38", content: "Building responsive layouts with CSS Grid and Flexbox.", likes: 2 },
+    { id: 39, title: "Blog Post 39", content: "Understanding browser storage: cookies, localStorage, sessionStorage.", likes: 6 },
+    { id: 40, title: "Blog Post 40", content: "Tips for improving SEO and accessibility of web apps.", likes: 9 },
+    { id: 41, title: "Blog Post 41", content: "Introduction to functional programming in JavaScript.", likes: 4 },
+    { id: 42, title: "Blog Post 42", content: "Creating custom hooks to reuse logic in React apps.", likes: 7 },
+    { id: 43, title: "Blog Post 43", content: "Best practices for handling errors in APIs and frontend.", likes: 3 },
+    { id: 44, title: "Blog Post 44", content: "Exploring CI/CD workflows with GitHub Actions.", likes: 6 },
+    { id: 45, title: "Blog Post 45", content: "Optimizing performance with memoization and useCallback.", likes: 5 },
+    { id: 46, title: "Blog Post 46", content: "Building forms with validation and error messages in React.", likes: 8 },
+    { id: 47, title: "Blog Post 47", content: "How to implement dark mode and theme toggling in apps.", likes: 2 },
+    { id: 48, title: "Blog Post 48", content: "Understanding web security basics: XSS, CSRF, and CORS.", likes: 7 },
+    { id: 49, title: "Blog Post 49", content: "An introduction to serverless functions and API routes.", likes: 4 },
+    { id: 50, title: "Blog Post 50", content: "Tips for writing effective commit messages and documentation.", likes: 6 },
+];
+
+
+
+// export const posts = Array.from({ length: 50 }, (_, i) => ({
+//     id: i + 1,
+//     title: `Post Title ${i + 1}`,
+//     content: `Content for post ${i + 1}`,
+//     likes: 0,
+// }));
